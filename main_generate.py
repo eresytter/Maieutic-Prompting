@@ -14,9 +14,9 @@ if __name__ == "__main__":
     openai.api_key = os.getenv("OPENAI_API_KEY")
 
     args = ArgumentParser()
-    args.add_argument("--dataset_name", default="Com2Sense", type=str)
+    args.add_argument("--dataset_name", default="Maieutic", type=str)
     args = args.parse_args()
-    args.data_filename = f"./data/{args.datset_name}/1_gen/dev.Q.json"
+    args.data_filename = f"./data/{args.dataset_name}/1_gen/dev.Q.json"
     args.out_filename = f"./data/{args.dataset_name}/1_gen/dev.G.pkl"
 
     prompt_prefix_dict = retrieve_prompt_prefix(args.dataset_name)
