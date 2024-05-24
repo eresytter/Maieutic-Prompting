@@ -1,6 +1,6 @@
 jsonlines
 openai
-pysat
+python-sat
 torch
 tqdm
 transformers
