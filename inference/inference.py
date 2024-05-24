@@ -27,7 +27,12 @@ class InferenceWrapper:
 
     @staticmethod
     def infer(G: Tree):
-        node_dict = InferenceWrapper.prepare_node_list(G)
+        node_dict = InferenceWrapper.prepare_node_list(G) # a dict of non-root nodes
+        # elements of node_dict:
+        # identifier: E or not E, depdning on the probability. 
+        # E: a statement or its negation, depending on the probability,
+        # blf=blf,
+        # integrity=integrity,
         belief = InferenceWrapper.compute_belief(node_dict)
         consistency = InferenceWrapper.compute_consistency(node_dict)
         graph2sat, wcnf = InferenceWrapper.convert_graph_to_sat(node_dict, belief, consistency)
@@ -49,7 +54,9 @@ class InferenceWrapper:
             score_list = []
             Q_consistency = {}
 
-        consistency = {pair: 1 if score > 0 else -1 for pair, score in consistency.items()} | Q_consistency
+        # consistency = {pair: 1 if score > 0 else -1 for pair, score in consistency.items()} | Q_consistency
+        consistency = {pair: 1 if score > 0 else -1 for pair, score in consistency.items()}
+        consistency.update(Q_consistency)
 
         return score_list, correct_E_dict, graph2sat, belief, consistency
 
