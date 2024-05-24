@@ -12,7 +12,7 @@ from treelib import Tree
 
 @dataclass
 class PromptConfig:
-    engine: str = "text-davinci-001"
+    engine: str = "gpt-3.5-turbo-instruct"
     max_tokens: int = 64
     temperature: float = 1
     top_p: float = 1
