@@ -1,0 +1,20 @@
+Given an utterance, negate it to create a new sentence.
+###
+Q: The pain is like, twists and turns in my belly, literally very swear, that can make me scream in pain. This sentence contains a metaphorical comparison.
+A: This statement is false. This sentence does not contain a metaphorical comparison.
+###
+Q: She is suffering from this pain for the past one week. This sentence contains a metaphorical comparison.
+A: This sentence is false. The sentence does not contain a metaphorical comparison.
+###
+Q: I have had this dull, piercing, or gnawing pain for almost three weeks on and off. This sentence does not contain a metaphorical comparison.
+A: This sentence is false. This sentence contains a metaphorical comparison.
+###
+Q: I cannot really see anything at this point. This sentence contains a metaphorical comparison.
+A: This sentence is false. The sentence does not contain a metaphorical comparison.
+###
+Q: Sometimes it feels as if someone hit my head with a baseball bat. This sentence does not contain a metaphorical comparison.
+A: This sentence is false. This sentence contains a metaphorical comparison.
+###
+Q: Sometimes, I have bleeding gums. This sentence contains a metaphorical comparsion.
+A: This sentence is false. The sentence does not contain a metaphorical comparison.
+###

@@ -1,0 +1,20 @@
+Given an utterance, correctly explain whether the utterance contains a metaphorical comparison or does not contain a metaphorical comparison.
+###
+Q: I have a sharp stabbing pain at McBurney's point.
+A: Stabbing is a sensation that is felt and there is no actual stab wounds involved. Therefore the utterance contains a metaphorical comparison.
+###
+Q: She is suffering from this pain for the past one week.
+A: There is no word that indicates metaphorical comparison. Therefore, the utterance does not contain a metaphorical comparison.
+###
+Q: I have had this dull, piercing, or gnawing pain for almost three weeks on and off.
+A: The use of piercing, and gnawing pain does not indicate that the patient is pierced or gnawed. Therefore, the utterance contains a metaphorical comparison.
+###
+Q: I cannot really see anything at this point.
+A: There is no word that indicates metaphorical comparison as it is literal that the patient is unable to see. Therefore, the utterance does not contain a metaphorical comparison.
+###
+Q: Sometimes it feels as if someone hit my head with a baseball bat.
+A: The word "as if" indicates that the patient is comparing their pain to being hit by a baseball bat, but their head is not literally hit by a bat. Therefore, the utterance contains a metaphorical comparison.
+###
+Q: Sometimes, I have bleeding gums.
+A: Bleeding is used literally. Therefore, the utterance does not contain a metaphorical comparison.
+###
